@@ -1,3 +1,4 @@
+[![Build Status](https://api.travis-ci.org/henesgokdag/node-movie-api.svg)](https://travis-ci.org/henesgokdag/node-movie-api)
 # node-movie-api
 Node.Js Movie API
 # Movie
