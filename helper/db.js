@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports=()=>{
-mongoose.connect('mongodb://movie_user:abcd1234@ds241968.mlab.com:41968/heroku_zc6z8jdk',{useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect('mongodb://movie_user:abcd1234@ds241968.mlab.com:41968/heroku_zc6z8jdk',{useCreateIndex: true,useNewUrlParser: true,useUnifiedTopology: true});
 mongoose.connection.on('open',()=>{
 console.log('mongoDB:Connected')
 });
