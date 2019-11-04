@@ -5,10 +5,16 @@ const DirectorSchema = new Schema({
   
   name: {
     type: String,
-    required: true
+    required: [true, "`{PATH}` alanı zorunludur."]
   },
-  surname: String,
-  bio: String,
+  surname: {
+    type:String,
+    required:[true, "`{PATH}` alanı zorunludur."]
+  },
+  bio: {
+    type:String,
+    required:[true, "`{PATH}` alanı zorunludur."]
+  },
   createdAt: {
       type:Date,
       default:Date.now
