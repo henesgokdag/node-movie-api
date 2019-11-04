@@ -100,7 +100,7 @@ router.get("/:director_id",(req,res,next)=>{
           res.json(data);
         })
         .catch(err => {
-          res.json({ err });
+          res.json(err);
         });
 });
 router.post("/", (req, res, next) => {
@@ -108,7 +108,7 @@ router.post("/", (req, res, next) => {
   const promise = director.save();
   promise
     .then(data => {
-      res.json(data );
+      res.json(data);
     })
     .catch(err => {
       res.json(err);
