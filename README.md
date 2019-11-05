@@ -1,6 +1,7 @@
 [![Build Status](https://api.travis-ci.org/henesgokdag/node-movie-api.svg)](https://travis-ci.org/henesgokdag/node-movie-api)
 # node-movie-api
 Node.Js Movie API
+API filmler ve yönetmenlerle alakalıdır. API Node.js ile geliştirilmiştir ve veritabanı olarak mongoDb kullanılmaktadır. Ayrıca projede json web token ile oturum yönetimi bulunmaktadır. Ayrıca projenin içinde unit test dosyaları da bulunmaktadır.
 # Movie
 
 | Route | HTTP Verb	 | POST body	 | Description	 |
@@ -28,4 +29,9 @@ Node.Js Movie API
 
 | Route | HTTP Verb	 | POST body	 | Description	 |
 | --- | --- | --- | --- |
-| /api/users/register | `POST` | { name: 'foo', password:'1234' } | Create a new user. |
+| /register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
+| /authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
+
+
+# Demo
+[Live demo on Heroku](https://node-my-movie-api.herokuapp.com)
